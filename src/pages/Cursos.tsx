@@ -95,7 +95,7 @@ export const Cursos: React.FC = () => {
     } else {
       setModulos([]);
       setAulas([]);
-    }
+      }
   }, [selectedContentCursoId]);
 
   // --- AÇÕES: CATEGORIAS ---
@@ -107,7 +107,7 @@ export const Cursos: React.FC = () => {
       if (catId) {
         await api.updateCategoria(catId, { Nome: catNome, Descricao: catDesc });
       } else {
-        await api.createCategoria({ Nome: catNome, Descricao: catDesc });
+        await api.createCategoria({Nome: catNome, Descricao: catDesc, img: ''});
       }
       setCatId(null);
       setCatNome('');
@@ -148,7 +148,6 @@ export const Cursos: React.FC = () => {
       } else {
         await api.createCurso({
           Titulo: cursoTitulo,
-          img: "/imgCurso.png",
           Descricao: cursoDesc,
           Nivel: cursoNivel,
           ID_Categoria: Number(cursoCatId),

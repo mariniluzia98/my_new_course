@@ -48,15 +48,19 @@ export const api = {
 
   // --- CATEGORIAS ---
   getCategorias: () => client.get<Categoria[]>('/categorias').then(r => r.data),
-  createCategoria: (data: Omit<Categoria, 'id' | 'ID_Categoria'>) => {
+  createCategoria: async function (data: Omit<Categoria, 'id' | 'ID_Categoria'>) {
     const id = generateId();
     const newCat: Categoria = {
       ...data,
       id,
       ID_Categoria: id,
     };
-    return client.post<Categoria>('/categorias', newCat).then(r => r.data);
+   
+    console.log(newCat)
+    const r = await client.post<Categoria>('/categorias', newCat);
+    return r.data;
   },
+  
   updateCategoria: (id: number, data: Partial<Categoria>) => 
     client.patch<Categoria>(`/categorias/${id}`, data).then(r => r.data),
   deleteCategoria: (id: number) => client.delete(`/categorias/${id}`).then(() => id),

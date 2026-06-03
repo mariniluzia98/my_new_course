@@ -40,7 +40,7 @@ export const Navbar: React.FC = () => {
         <div className={`collapse navbar-collapse ${menuAberto ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-1">
             <li className="nav-item">
-              <Link className={`nav-link nav-link-custom d-flex align-items-center gap-2 ${isActive('/')}`} to="/">
+              <Link className={`nav-link nav-link-custom d-flex align-items-center gap-2 ${isActive('/dashboard')}`} to="/dashboard">
                 <i className="bi bi-grid-1x2-fill"></i> Dashboard
               </Link>
             </li>
@@ -61,7 +61,7 @@ export const Navbar: React.FC = () => {
             </li>
             <li className="nav-item">
               <Link className={`nav-link nav-link-custom d-flex align-items-center gap-2 ${isActive('/financeiro')}`} to="/financeiro">
-                <i className="bi bi-credit-card-fill"></i> Financeiro
+                <i className="bi bi-currency-dollar"></i> Financeiro
               </Link>
             </li>
             <li className="nav-item">
@@ -87,7 +87,7 @@ export const Navbar: React.FC = () => {
             )}
 
             <div className="border-start ps-3 border-secondary d-flex align-items-center gap-2">
-              <span className="text-secondary fs-7 d-none d-md-inline"><i className="bi bi-person-circle"></i> Testar Perfil:</span>
+              <span className="text-secondary fs-7 d-none d-md-inline"><i className="bi bi-person-circle"></i> Perfil:</span>
               <select
                 className="form-select form-select-custom py-1 px-2 border-0"
                 style={{ fontSize: '0.85rem', width: 'auto', backgroundPosition: 'right 8px center' }}

@@ -9,6 +9,7 @@ export interface Usuario {
 }
 
 export interface Categoria {
+  img: string;
   id: number;
   ID_Categoria: number;
   Nome: string;
