@@ -1,0 +1,357 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "ID_Usuario": 1,
+      "NomeCompleto": "Ana Silva",
+      "Email": "ana@dev.com",
+      "SenhaHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+      "DataCadastro": "2026-05-01",
+      "Cargo": "Aluno"
+    },
+    {
+      "id": "2",
+      "ID_Usuario": 2,
+      "NomeCompleto": "Carlos Souza",
+      "Email": "carlos@dev.com",
+      "SenhaHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+      "DataCadastro": "2026-04-15",
+      "Cargo": "Instrutor"
+    },
+    {
+      "id": "3",
+      "ID_Usuario": 3,
+      "NomeCompleto": "Admin Master",
+      "Email": "admin@dev.com",
+      "SenhaHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+      "DataCadastro": "2026-01-01",
+      "Cargo": "Admin"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "ID_Categoria": 1,
+      "Nome": "Frontend",
+      "Descricao": "Tecnologias de interface como React, Vue, HTML, CSS e JavaScript moderno."
+    },
+    {
+      "id": "2",
+      "ID_Categoria": 2,
+      "Nome": "Backend",
+      "Descricao": "Desenvolvimento do lado do servidor, APIs, banco de dados e arquitetura."
+    },
+    {
+      "id": "3",
+      "ID_Categoria": 3,
+      "Nome": "DevOps",
+      "Descricao": "Infraestrutura como código, containers, CI/CD e deploy automatizado."
+    },
+    {
+      "Nome": "Big Data",
+      "Descricao": "inscreva-se",
+      "id": "tLJaKzqlW8o",
+      "ID_Categoria": 689228
+    }
+  ],
+  "cursos": [
+    {
+      "id": "1",
+      "ID_Curso": 1,
+      "Titulo": "React Pro com TypeScrip",
+      "img": "/public/reactPro.png",
+      "Descricao": "Domine o React do básico ao avançado utilizando TypeScript, Hooks customizados e boas práticas.",
+      "ID_Instrutor": 2,
+      "ID_Categoria": 1,
+      "Nivel": "Intermediário",
+      "DataPublicacao": "2026-05-01",
+      "TotalAulas": 4,
+      "TotalHoras": 12
+    },
+    {
+      "id": "2",
+      "ID_Curso": 2,
+      "Titulo": "Node.js com Express e Clean Architecture",
+      "img": "/public/Node.jsExpressCleanArchitecture.png",
+      "Descricao": "Crie APIs robustas e escaláveis aplicando conceitos de Clean Architecture, testes e segurança.",
+      "ID_Instrutor": 2,
+      "ID_Categoria": 2,
+      "Nivel": "Avançado",
+      "DataPublicacao": "2026-05-10",
+      "TotalAulas": 3,
+      "TotalHoras": 15
+    },
+    {
+      "id": "3",
+      "ID_Curso": 3,
+      "Titulo": "Docker & Kubernetes para Iniciantes",
+      "img": "/public/DockerKubernetes.png",
+      "Descricao": "Aprenda a containerizar suas aplicações e orquestrar microsserviços na nuvem.",
+      "ID_Instrutor": 3,
+      "ID_Categoria": 3,
+      "Nivel": "Iniciante",
+      "DataPublicacao": "2026-05-20",
+      "TotalAulas": 2,
+      "TotalHoras": 8
+    },
+    {
+      "id": "4",
+      "ID_Curso": 4,
+      "Titulo": "Big Data",
+      "img": "/public/BigData.png",
+      "Descricao": "Aprenda a transformação de grandes conjuntos de dados brutos em inteligência para negócios",
+      "Nivel": "Iniciante",
+      "ID_Categoria": 4,
+      "ID_Instrutor": 4,
+      "DataPublicacao": "2026-06-03",
+      "TotalAulas": 4,
+      "TotalHoras": 12
+    }
+  ],
+  "modulos": [
+    {
+      "id": "1",
+      "ID_Modulo": 1,
+      "ID_Curso": 1,
+      "Titulo": "Introdução ao React & TS",
+      "Ordem": 1
+    },
+    {
+      "id": "2",
+      "ID_Modulo": 2,
+      "ID_Curso": 1,
+      "Titulo": "Hooks Avançados",
+      "Ordem": 2
+    },
+    {
+      "id": "3",
+      "ID_Modulo": 3,
+      "ID_Curso": 2,
+      "Titulo": "Configurando TypeScript no Node",
+      "Ordem": 1
+    },
+    {
+      "id": "4",
+      "ID_Modulo": 4,
+      "ID_Curso": 3,
+      "Titulo": "Conceitos Básicos do Docker",
+      "Ordem": 1
+    }
+  ],
+  "aulas": [
+    {
+      "id": "1",
+      "ID_Aula": 1,
+      "ID_Modulo": 1,
+      "Titulo": "Configurando o Ambiente de Desenvolvimento",
+      "TipoConteudo": "Vídeo",
+      "URL_Conteudo": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "DuracaoMinutos": 10,
+      "Ordem": 1
+    },
+    {
+      "id": "2",
+      "ID_Aula": 2,
+      "ID_Modulo": 1,
+      "Titulo": "Primeiro Componente React com TSX",
+      "TipoConteudo": "Texto",
+      "URL_Conteudo": "Nesta aula, aprendemos sobre componentes funcionais, propriedades e tipagem de props no React.",
+      "DuracaoMinutos": 15,
+      "Ordem": 2
+    },
+    {
+      "id": "3",
+      "ID_Aula": 3,
+      "ID_Modulo": 2,
+      "Titulo": "Gerenciamento de Estado com useContext",
+      "TipoConteudo": "Vídeo",
+      "URL_Conteudo": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "DuracaoMinutos": 20,
+      "Ordem": 1
+    },
+    {
+      "id": "4",
+      "ID_Aula": 4,
+      "ID_Modulo": 2,
+      "Titulo": "Quiz de Hooks Avançados",
+      "TipoConteudo": "Quiz",
+      "URL_Conteudo": "Responda às questões sobre useEffect, useContext e custom hooks para testar seu conhecimento.",
+      "DuracaoMinutos": 5,
+      "Ordem": 2
+    },
+    {
+      "id": "5",
+      "ID_Aula": 5,
+      "ID_Modulo": 3,
+      "Titulo": "Inicializando npm e definindo tsconfig.json",
+      "TipoConteudo": "Vídeo",
+      "URL_Conteudo": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "DuracaoMinutos": 12,
+      "Ordem": 1
+    },
+    {
+      "id": "6",
+      "ID_Aula": 6,
+      "ID_Modulo": 4,
+      "Titulo": "O que são Containers e Imagens?",
+      "TipoConteudo": "Texto",
+      "URL_Conteudo": "Containers são pacotes de software padronizados que agrupam código e dependências para rodar em qualquer ambiente.",
+      "DuracaoMinutos": 10,
+      "Ordem": 1
+    },
+    {
+      "id": "7",
+      "ID_Aula": 7,
+      "ID_Modulo": 4,
+      "Titulo": "Big Data",
+      "TipoConteudo": "Vídeo",
+      "URL_Conteudo": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "DuracaoMinutos": 10,
+      "Ordem": 1
+    },
+    {
+      "id": "8",
+      "ID_Aula": 8,
+      "ID_Modulo": 4,
+      "Titulo": "Big Data",
+      "TipoConteudo": "Quiz",
+      "URL_Conteudo": "Responda às questões sobre big data.",
+      "DuracaoMinutos": 5,
+      "Ordem": 2
+    }
+  ],
+  "matriculas": [
+    {
+      "id": "1",
+      "ID_Matricula": 1,
+      "ID_Usuario": 1,
+      "ID_Curso": 1,
+      "DataMatricula": "2026-05-02",
+      "DataConclusao": null
+    },
+    {
+      "id": "2",
+      "ID_Matricula": 2,
+      "ID_Usuario": 1,
+      "ID_Curso": 3,
+      "DataMatricula": "2026-05-21",
+      "DataConclusao": "2026-05-22"
+    }
+  ],
+  "progresso_aulas": [
+    {
+      "id": "1_1",
+      "ID_Usuario": 1,
+      "ID_Aula": 1,
+      "DataConclusao": "2026-05-02",
+      "Status": "Concluído"
+    },
+    {
+      "id": "1_2",
+      "ID_Usuario": 1,
+      "ID_Aula": 2,
+      "DataConclusao": "2026-05-03",
+      "Status": "Concluído"
+    },
+    {
+      "id": "1_6",
+      "ID_Usuario": 1,
+      "ID_Aula": 6,
+      "DataConclusao": "2026-05-22",
+      "Status": "Concluído"
+    }
+  ],
+  "avaliacoes": [
+    {
+      "id": "1",
+      "ID_Avaliacao": 1,
+      "ID_Usuario": 1,
+      "ID_Curso": 1,
+      "Nota": 5,
+      "Comentario": "Curso excelente! O professor explica muito bem e a estruturação dos módulos está perfeita.",
+      "DataAvaliacao": "2026-05-05"
+    }
+  ],
+  "trilhas": [
+    {
+      "id": "1",
+      "ID_Trilha": 1,
+      "Titulo": "Trilha Desenvolvimento Full Stack",
+      "Descricao": "Aprenda frontend com React e backend com Node.js para se tornar um desenvolvedor completo.",
+      "ID_Categoria": 1
+    }
+  ],
+  "trilhas_cursos": [
+    {
+      "id": "1_1",
+      "ID_Trilha": 1,
+      "ID_Curso": 1,
+      "Ordem": 1
+    },
+    {
+      "id": "1_2",
+      "ID_Trilha": 1,
+      "ID_Curso": 2,
+      "Ordem": 2
+    }
+  ],
+  "certificados": [
+    {
+      "id": "1",
+      "ID_Certificado": 1,
+      "ID_Usuario": 1,
+      "ID_Curso": 3,
+      "ID_Trilha": null,
+      "CodigoVerificacao": "cert-docker-1234",
+      "DataEmissao": "2026-05-22"
+    }
+  ],
+  "planos": [
+    {
+      "id": "1",
+      "ID_Plano": 1,
+      "Nome": "Mensal Starter",
+      "Descricao": "Acesso a todos os cursos básicos, suporte na comunidade e materiais de apoio.",
+      "Preco": 39.9,
+      "DuracaoMeses": 1
+    },
+    {
+      "id": "2",
+      "ID_Plano": 2,
+      "Nome": "Semestral Pro",
+      "Descricao": "Acesso completo a todos os cursos, trilhas, suporte prioritário e certificados ilimitados.",
+      "Preco": 179.4,
+      "DuracaoMeses": 6
+    },
+    {
+      "id": "3",
+      "ID_Plano": 3,
+      "Nome": "Anual Elite",
+      "Descricao": "Acesso ilimitado, mentorias mensais em grupo, novos cursos antecipados e certificado de trilhas.",
+      "Preco": 299,
+      "DuracaoMeses": 12
+    }
+  ],
+  "assinaturas": [
+    {
+      "id": "1",
+      "ID_Assinatura": 1,
+      "ID_Usuario": 1,
+      "ID_Plano": 2,
+      "DataInicio": "2026-05-01",
+      "DataFim": "2026-11-01"
+    }
+  ],
+  "pagamentos": [
+    {
+      "id": "1",
+      "ID_Pagamento": 1,
+      "ID_Assinatura": 1,
+      "ValorPago": 179.4,
+      "DataPagamento": "2026-05-01",
+      "MetodoPagamento": "Cartão de Crédito",
+      "Id_Transacao_Gateway": "pay_tx_998877665544"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
