@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
 
 :root {
   --bg-color: #0b0f19;
@@ -14,12 +14,28 @@
 
 body {
   margin: 0;
-  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family:
+    "Plus Jakarta Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
   background-color: var(--bg-color);
   color: var(--text-primary);
-  background-image: 
-    radial-gradient(circle at 10% 20%, rgba(124, 58, 237, 0.1) 0%, transparent 40%),
-    radial-gradient(circle at 90% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 40%);
+  background-image:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(124, 58, 237, 0.1) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(59, 130, 246, 0.1) 0%,
+      transparent 40%
+    );
   background-attachment: fixed;
   min-height: 100vh;
   overflow-x: hidden;
@@ -139,7 +155,8 @@ body {
   transition: var(--transition-smooth);
 }
 
-.nav-link-custom:hover, .nav-link-custom.active {
+.nav-link-custom:hover,
+.nav-link-custom.active {
   color: #fff;
   background: rgba(255, 255, 255, 0.05);
 }
@@ -187,7 +204,7 @@ body {
 }
 
 .timeline-item-trail::before {
-  content: '';
+  content: "";
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -232,9 +249,12 @@ body {
 }
 
 .certificate-preview-bg::before {
-  content: '';
+  content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   border: 2px solid rgba(217, 119, 6, 0.3);
   margin: 10px;
   pointer-events: none;
@@ -242,7 +262,8 @@ body {
 
 /* Animations */
 @keyframes pulseGlow {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.5;
   }
   50% {

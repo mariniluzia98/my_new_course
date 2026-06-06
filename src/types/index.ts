@@ -1,36 +1,39 @@
+export { api } from "../services/api";
+
 export interface Usuario {
-  id: number;
+  id: number | string;
   ID_Usuario: number;
   NomeCompleto: string;
   Email: string;
   SenhaHash: string;
   DataCadastro: string;
-  Cargo: 'Aluno' | 'Instrutor' | 'Admin';
+  Cargo: "Aluno" | "Instrutor" | "Admin";
 }
 
 export interface Categoria {
   img: string;
-  id: number;
+  id: number | string;
   ID_Categoria: number;
   Nome: string;
   Descricao: string;
 }
 
 export interface Curso {
-  id: number;
+  img: string | undefined;
+  id: number | string;
   ID_Curso: number;
   Titulo: string;
   Descricao: string;
   ID_Instrutor: number;
   ID_Categoria: number;
-  Nivel: 'Iniciante' | 'Intermediário' | 'Avançado';
+  Nivel: "Iniciante" | "Intermediário" | "Avançado";
   DataPublicacao: string;
   TotalAulas: number;
   TotalHoras: number;
 }
 
 export interface Modulo {
-  id: number;
+  id: number | string;
   ID_Modulo: number;
   ID_Curso: number;
   Titulo: string;
@@ -38,18 +41,18 @@ export interface Modulo {
 }
 
 export interface Aula {
-  id: number;
+  id: number | string;
   ID_Aula: number;
   ID_Modulo: number;
   Titulo: string;
-  TipoConteudo: 'Vídeo' | 'Texto' | 'Quiz';
+  TipoConteudo: "Vídeo" | "Texto" | "Quiz";
   URL_Conteudo: string;
   DuracaoMinutos: number;
   Ordem: number;
 }
 
 export interface Matricula {
-  id: number;
+  id: number | string;
   ID_Matricula: number;
   ID_Usuario: number;
   ID_Curso: number;
@@ -62,11 +65,11 @@ export interface ProgressoAula {
   ID_Usuario: number;
   ID_Aula: number;
   DataConclusao: string;
-  Status: 'Concluído';
+  Status: "Concluído";
 }
 
 export interface Avaliacao {
-  id: number;
+  id: number | string;
   ID_Avaliacao: number;
   ID_Usuario: number;
   ID_Curso: number;
@@ -76,7 +79,7 @@ export interface Avaliacao {
 }
 
 export interface Trilha {
-  id: number;
+  id: number | string;
   ID_Trilha: number;
   Titulo: string;
   Descricao: string;
@@ -91,7 +94,7 @@ export interface TrilhaCurso {
 }
 
 export interface Certificado {
-  id: number;
+  id: number | string;
   ID_Certificado: number;
   ID_Usuario: number;
   ID_Curso: number | null;
@@ -101,7 +104,7 @@ export interface Certificado {
 }
 
 export interface Plano {
-  id: number;
+  id: number | string;
   ID_Plano: number;
   Nome: string;
   Descricao: string;
@@ -110,7 +113,7 @@ export interface Plano {
 }
 
 export interface Assinatura {
-  id: number;
+  id: number | string;
   ID_Assinatura: number;
   ID_Usuario: number;
   ID_Plano: number;
@@ -119,7 +122,7 @@ export interface Assinatura {
 }
 
 export interface Pagamento {
-  id: number;
+  id: number | string;
   ID_Pagamento: number;
   ID_Assinatura: number;
   ValorPago: number;

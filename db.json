@@ -48,10 +48,10 @@
       "Descricao": "Infraestrutura como código, containers, CI/CD e deploy automatizado."
     },
     {
-      "Nome": "Big Data",
-      "Descricao": "inscreva-se",
-      "id": "tLJaKzqlW8o",
-      "ID_Categoria": 689228
+      "id": "4",
+      "ID_Categoria": 4,
+      "Nome": "DataOps",
+      "Descricao": "Armazenamento e processamento distribuído de volumes massivos de dados usando clusters escaláveis, pipelines automatizados e bancos não relacionais."
     }
   ],
   "cursos": [
@@ -59,7 +59,7 @@
       "id": "1",
       "ID_Curso": 1,
       "Titulo": "React Pro com TypeScrip",
-      "img": "/public/reactPro.png",
+      "img": "/reactPro.png",
       "Descricao": "Domine o React do básico ao avançado utilizando TypeScript, Hooks customizados e boas práticas.",
       "ID_Instrutor": 2,
       "ID_Categoria": 1,
@@ -72,7 +72,7 @@
       "id": "2",
       "ID_Curso": 2,
       "Titulo": "Node.js com Express e Clean Architecture",
-      "img": "/public/Node.jsExpressCleanArchitecture.png",
+      "img": "/public/nodeExpress.png",
       "Descricao": "Crie APIs robustas e escaláveis aplicando conceitos de Clean Architecture, testes e segurança.",
       "ID_Instrutor": 2,
       "ID_Categoria": 2,
@@ -98,7 +98,7 @@
       "id": "4",
       "ID_Curso": 4,
       "Titulo": "Big Data",
-      "img": "/public/BigData.png",
+      "img": "/BigData.png",
       "Descricao": "Aprenda a transformação de grandes conjuntos de dados brutos em inteligência para negócios",
       "Nivel": "Iniciante",
       "ID_Categoria": 4,
