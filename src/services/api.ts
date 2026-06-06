@@ -16,10 +16,10 @@ import type {
   Pagamento,
 } from "../types";
 
-const API_URL = "http://localhost:3001";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3001";
 
 const client = axios.create({
-  baseURL: API_URL,
+  baseURL: API_URL || undefined,
   headers: {
     "Content-Type": "application/json",
   },
